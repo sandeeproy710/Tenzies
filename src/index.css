@@ -1,9 +1,77 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: #0b2434;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+main {
+  background-color: rgb(212, 211, 211);
+  height: 100%;
+  border-radius: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  margin: 0;
+}
+
+.die{
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  box-shadow: 5px 3px 2px 0px rgba(173,157,157,0.63);
+-webkit-box-shadow: 5px 3px 2px 0px rgba(173,157,157,0.63);
+-moz-box-shadow: 5px 3px 2px 0px rgba(173,157,157,0.63);
+border-radius: 5px;
+cursor: pointer;
+}
+
+.dieContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+}
+
+.rollDice {
+  width: 150px;
+  height: 40px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 7px;
+  background-color: #2600ff;
+  color: white;
+}
+
+.title{
+  font-size: 40px;
+  margin: 0;
+}
+
+.instruction {
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+  padding: 0 70px;
+  font-size: 1.2rem;
+}
